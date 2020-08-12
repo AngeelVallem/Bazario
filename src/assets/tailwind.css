@@ -1,11 +1,27 @@
 /* src/tailwind.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.btn-accept{
-    @apply bg-green-500 p-1 rounded-lg text-white border font-bold m-auto;
+.container-navbar{
+    @apply items-center justify-between bg-paleta-100 p-2;
 }
-.btn-accept:hover{
-    @apply bg-green-900;
+.content-search{
+    @apply grid grid-cols-3 gap-4 mx-auto;
+}
+.logo{
+    @apply text-white text-3xl font-bold p-1 col-start-1 text-center font-roboto;
+}
+.search{
+    @apply col-start-2 border my-auto border-2 rounded-lg border-gray-200;
+}
+.sub-menu{
+    @apply flex justify-center text-center m-auto;
+}
+.link{
+    @apply  text-base p-1 mr-6 font-roboto text-base;
+}
+.link:hover{
+    @apply text-black;
 }

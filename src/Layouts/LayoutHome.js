@@ -1,5 +1,6 @@
 import React from "react";
-import {Route,Switch} from 'react-router-dom'
+import {Route,Switch} from 'react-router-dom';
+import Navbar from '../Components/home/Navbar'
 //Destructuramos los props de las rutas hijas
 const LayoutHome = ({routes}) => {
   console.log(routes);
@@ -7,7 +8,7 @@ const LayoutHome = ({routes}) => {
   return (
     <div>
         {/*TO DO: NAVBAR */}
-        <nav>NavBar</nav>
+        <Navbar />
         {/* TO DO: CONTENT STYLES */}
         <div>
 
